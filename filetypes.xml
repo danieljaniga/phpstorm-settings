@@ -8,6 +8,7 @@
       <mapping pattern=".styleci" type="PLAIN_TEXT" />
       <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
       <mapping ext="pub" type="PLAIN_TEXT" />
+      <mapping ext="htpasswd" type="PLAIN_TEXT" />
       <removed_mapping pattern="qsdfqsdf" approved="true" type="PLAIN_TEXT" />
       <removed_mapping pattern="components" approved="true" type="PLAIN_TEXT" />
       <removed_mapping pattern="BalieAuth" approved="true" type="PLAIN_TEXT" />
