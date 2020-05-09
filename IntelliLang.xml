@@ -98,6 +98,7 @@
     <injection language="RegExp" injector-id="sql">
       <display-name>MySQL RegExp</display-name>
       <place disabled="true"><![CDATA[sqlElement().forDialects("MySQL").binaryExpressionArgument(1, sqlBinaryExpression().operation(leafTokens("regexp").or("not", "regexp").or("rlike").or("not", "rlike")))]]></place>
+      <place><![CDATA[sqlElement().forDialects("MySQL").functionArgument(1, sqlFunctionCall().name("regexp_instr", "regexp_like", "regexp_replace", "regexp_substr").params(sqlExpressions().count(2, 6)))]]></place>
     </injection>
     <injection language="XML" injector-id="sql">
       <display-name>MySQL XML</display-name>
@@ -202,6 +203,10 @@
       <display-name>style</display-name>
       <place disabled="true"><![CDATA[xmlTag().withLocalName(string().equalTo("style")).withNamespace(string().equalTo("http://www.w3.org/1999/xhtml"))]]></place>
       <xpath-condition>lower-case(@type)='text/css'</xpath-condition>
+    </injection>
+    <injection language="InjectablePHP" injector-id="xml">
+      <display-name>x-breadcrumbs/@crumbs</display-name>
+      <place><![CDATA[xmlAttribute().withLocalName(string().equalTo("crumbs")).withParent(xmlTag().withLocalName(string().equalTo("x-breadcrumbs")).withNamespace(string().equalTo("http://www.w3.org/1999/html")))]]></place>
     </injection>
   </component>
 </application>
