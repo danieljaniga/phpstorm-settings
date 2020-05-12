@@ -8,6 +8,7 @@
       <mapping pattern=".prettierrc" type="PLAIN_TEXT" />
       <mapping pattern=".styleci" type="PLAIN_TEXT" />
       <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
+      <mapping pattern="8293fbbd484726cd428170105f09cc1f07c772dc" type="PLAIN_TEXT" />
       <mapping ext="pub" type="PLAIN_TEXT" />
       <mapping ext="htpasswd" type="PLAIN_TEXT" />
       <removed_mapping pattern="qsdfqsdf" approved="true" type="PLAIN_TEXT" />
